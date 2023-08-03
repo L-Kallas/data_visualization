@@ -23,11 +23,11 @@ y_axis = st.selectbox('select element Y', el_list)
 
 p = figure(
     title='simple line example',
-    x_axis_label=x_axis,
-    y_axis_label=y_axis)
+    x_axis_label='x',
+    y_axis_label='y')
+
+p.line(x, y)
 
 #st.multiselect('select location', file_name_list, file_name_list[0])
-
-#p.line(x, y, legend_label='Trend', line_width=2)
 
 #st.bokeh_chart(p, use_container_width=True)
