@@ -14,7 +14,7 @@ st.write('Hello World')
 
 select_file = st.selectbox('select location', file_name_list)
 
-df = pd.read_csv ('Data/Bastar Craton.csv')#(select_file)
+df = pd.read_csv(select_file)
 st.dataframe(df)
 
 el_list = df.columns.tolist()[27:80]
