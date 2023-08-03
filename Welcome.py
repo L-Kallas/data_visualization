@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from bokeh.plotting import figure
-import bokeh.io
 import numpy as np
 import os
 
@@ -12,8 +11,6 @@ for i in os.listdir():
     file_name_list.append(i)
 
 st.write('Hello World')
-
-output_notebook()
 
 select_file = st.selectbox('select location', file_name_list)
 
