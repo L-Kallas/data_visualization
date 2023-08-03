@@ -9,9 +9,9 @@ for i in os.listdir():
 
 st.write('Hello Worlda')
 
-select_file = st.multiselect('select location', file_name_list)
+select_file = st.selectbox('select location', file_name_list)
 
-df = pd.read_csv(select_file)
+df = pd.read_csv (select_file)
 st.dataframe(df)
 
 el_list = df.columns.tolist()[27:80]
