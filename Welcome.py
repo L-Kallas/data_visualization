@@ -23,8 +23,8 @@ y_axis = st.selectbox('select element Y', el_list)
 
 p = figure(title='simple line example', x_axis_label='x', y_axis_label='y')
 
-st.bokeh_chart(p)
-p.circle(df[x_axis]/10000, df[y_axis]/10000)
-p.line([np.min(df[x_axis]/10000), np.max(df[y_axis]/10000)], [5, 5])
+st.bokeh_chart(p, use_container_width=True)
+p.circle(df['Si']/10000, df['Mg']/10000)
+#p.line([np.min(df[x_axis]/10000), np.max(df[y_axis]/10000)], [5, 5])
 
 #st.multiselect('select location', file_name_list, file_name_list[0])
