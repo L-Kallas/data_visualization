@@ -21,17 +21,12 @@ el_list = df.columns.tolist()[27:80]
 x_axis = st.selectbox('select element X', el_list)
 y_axis = st.selectbox('select element Y', el_list)
 
-p.line(y_axis)
+p = figure(
+    title='simple line example',
+    x_axis_label=x_axis,
+    y_axis_label=y_axis)
 
 #st.multiselect('select location', file_name_list, file_name_list[0])
-
-#x = [1, 2, 3, 4, 5]
-#y = [6, 7, 2, 4, 5]
-
-#p = figure(
-    #title='simple line example',
-    #x_axis_label='x',
-    #y_axis_label='y')
 
 #p.line(x, y, legend_label='Trend', line_width=2)
 
