@@ -1,4 +1,4 @@
 pandas
-matplotlib.pyplot
+matplotlib
 numpy
 bokeh == 2.4.3
