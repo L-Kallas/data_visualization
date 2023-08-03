@@ -7,7 +7,7 @@ for i in os.listdir():
   if i.endswith('csv'):
     file_name_list.append(i)
 
-st.write('Hello Worlda')
+st.write('Hello World')
 
 select_file = st.selectbox('select location', file_name_list)
 
