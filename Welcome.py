@@ -26,7 +26,7 @@ p = figure(
     x_axis_label='x',
     y_axis_label='y')
 
-p.line(x, y)
+p.line([np.min(df[x_axis]/10000), np.max(df[y_axis]/10000)], [5, 5])
 
 #st.multiselect('select location', file_name_list, file_name_list[0])
 
