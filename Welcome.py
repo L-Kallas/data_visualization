@@ -18,8 +18,8 @@ df = pd.read_csv (select_file)
 st.dataframe(df)
 
 el_list = df.columns.tolist()[27:80]
-x_axis = st.selectbox('select element', el_list)
-y_axis = st.selectbox('select element', el_list)
+x_axis = st.selectbox('select element X', el_list)
+y_axis = st.selectbox('select element Y', el_list)
 
 p.line(x_axis, y_axis)
 
