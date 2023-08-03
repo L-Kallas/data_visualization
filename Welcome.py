@@ -22,8 +22,8 @@ x_axis = st.selectbox('Select Element X', el_list)
 y_axis = st.selectbox('Select Element Y', el_list)
 
 p = figure(title='simple line example', x_axis_label=x_axis, y_axis_label=y_axis)
-p.x_range = Range1d(np.min(df[x_axis]/10000), np.max(df[x_axis]/10000))
-p.y_range = Range1d(np.min(df[y_axis]/10000), np.max(df[y_axis]/10000))
+#p.x_range = Range1d(np.min(df[x_axis]/10000), np.max(df[x_axis]/10000))
+#p.y_range = Range1d(np.min(df[y_axis]/10000), np.max(df[y_axis]/10000))
 
 p.circle(df[x_axis]/10000, df[y_axis]/10000)
 p.line([np.min(df[x_axis]/10000), np.max(df[y_axis]/10000)], [5, 5])
