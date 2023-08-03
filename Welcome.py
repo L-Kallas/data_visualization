@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 #import matplotlib.pyplot as plt
+from bokeh.plotting import figure
 import numpy as np
 import os
 
@@ -21,8 +22,6 @@ x_axis = st.selectbox('select element', el_list)
 #y_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list[0])
-
-from bokeh.plotting import figure
 
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 2, 4, 5]
